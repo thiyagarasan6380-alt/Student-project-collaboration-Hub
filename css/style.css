@@ -1,0 +1,144 @@
+:root{
+    --liberty-blue: #4159ef;
+    --aquatic-frost: #bdd1d9;
+    --flamboyant-red: #f9293b;
+    --white: #FFFFFF;
+    --dark: #1A1A1A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        var(--liberty-blue),
+        var(--aquatic-frost)
+    );
+}
+
+.login-card{
+    width:350px;
+    background:var(--white);
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.login-card h1{
+    color:var(--liberty-blue);
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.login-card p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin:10px 0 5px;
+    color:var(--dark);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:2px solid var(--aquatic-frost);
+    border-radius:8px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+input:focus{
+    border-color:var(--liberty-blue);
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:var(--flamboyant-red);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.signup{
+    margin-top:15px;
+}
+
+.signup a{
+    color:var(--liberty-blue);
+    text-decoration:none;
+    font-weight:bold;
+}
+.dashboard{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.dashboard h1{
+    color:white;
+    margin-bottom:20px;
+}
+
+.dashboard h2{
+    color:white;
+    margin-bottom:30px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-decoration:none;
+    color:var(--liberty-blue);
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid var(--aquatic-frost);
+    border-radius:8px;
+    margin-bottom:15px;
+    resize:none;
+    height:100px;
+}
+.card h3{
+    color: var(--liberty-blue);
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
