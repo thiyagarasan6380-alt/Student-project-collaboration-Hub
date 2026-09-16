@@ -8,4 +8,8 @@ public class Student extends User {
     public String getSkill() {
         return skill;
     }
+
+    public void displayRole() {
+        System.out.println("Student");
+    }
 }
