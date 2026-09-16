@@ -17,7 +17,7 @@ public class Main {
         User u2 = new Student();
         u2.displayRole();
 
-        System.out.println("------STUDENT PROJECT COLLABORATION HUB");
+        System.out.println("-----------STUDENT PROJECT COLLABORATION HUB-----------");
 
         while (running) {
             System.out.println("1. Create Student");
